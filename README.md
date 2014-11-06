@@ -41,6 +41,7 @@ Current Datasets
 * `VIPeR`(1264 images of 632 people)
 * `i-LIDs`(2008 i-LIDS Multiple-Camera Tracking Scenario (MCTS) dataset)
 * `ETHZ`(476 images of 119 people, contains seq 1,2,3)
+* `WARD`(4786 images of 70 people, contains camera 1,2,3)
 * ……
 
 * To add datasets, please check these files<br>
