@@ -5,7 +5,7 @@ function [ counts ] = getCmcLength( dataset )
 switch dataset
     case 'VIPER'
         counts=316;
-    case 'iLIDS'
+    case 'ILIDS'
         ilids_labels=load('SharedMats/Label_iLIDS','Labels');
         [gallery_label,~]=get_dataset_labels(ilids_labels.Labels);
         counts=length(gallery_label);

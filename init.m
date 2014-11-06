@@ -16,7 +16,7 @@ paramALL.CanSkipFeature = 1;%skip exist model creating
 paramALL.CanSkipModel = 1;%skip exist model creating
 paramALL.ReSelectLabel = 1;%re-select the test label
 paramALL.CleanLastFMR = 1;%re-select the test label
-paramALL.Dataset=upper('WARD'); % 'VIPeR' 'iLIDS' 'ETHZ3' 'WARD'
+paramALL.Dataset=upper('ETHZ1'); % 'VIPeR' 'iLIDS' 'ETHZ3' 'WARD'
 
 paramALL.DIR.FeatureDIR='Features\';%Feature File Dir
 paramALL.DIR.LabelDIR=['Labels\' paramALL.Dataset '\'];
