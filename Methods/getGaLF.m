@@ -12,7 +12,7 @@ paramGaLF.useFV = 0;
 paramGaLF.useFLIP = 0;%if the fliplr img used for re-id
 paramGaLF.useNorm = 0;%if the feature normailized (!not finished!)
 paramGaLF.mask_type ='PPDDNBG';%'STRIPES' 'WHOLE' 'PPDDN' 'PPDDNBG'  'CELLS' 'PPDDNBG_SP' 'MAT' 'PPDDNBGH'
-paramGaLF.feature_type = {'LAB', 'Y', 'DY'};%'RGB' 'HSV' 'LAB' 'X' 'Y' 'DX' 'DY' 'SIFT' 'TRANS' 'SAL' 'LBP' 'DXY' 'DDX 'DDY' 'GDX' 'GDY''
+paramGaLF.feature_type = {'HSV', 'Y', 'DY'};%'RGB' 'HSV' 'H2SV' 'LAB' 'X' 'Y' 'DX' 'DY' 'SIFT' 'TRANS' 'SAL' 'LBP' 'DXY' 'DDX 'DDY' 'GDX' 'GDY''
 
 paramGaLF.featureName=[paramALL.Dataset '_' cell2mat(paramGaLF.feature_type) '_' paramGaLF.bt_type '_' paramGaLF.mask_type ];
 paramGaLF.featureFileName=fullfile(paramALL.DIR.FeatureDIR,[paramGaLF.featureName '.mat']);

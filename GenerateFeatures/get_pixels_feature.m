@@ -235,6 +235,15 @@ save([paramALL.DIR.FeatureDIR paramMethod.featureName],'X','paramALL','paramMeth
             end
             ps=[ps,reshape(points,[],3)];
         end
+        if ismember('H2SV',paramM.feature_type)
+            I_h2sv=rgb2h2sv(I);
+            if paramM.useNorm
+                points=I_h2sv(repmat(mask,[1,1,4]));
+            else
+                points=I_h2sv(repmat(mask,[1,1,4])).*100;
+            end
+            ps=[ps,reshape(points,[],4)];
+        end
         if ismember('LAB',paramM.feature_type)
             cform = makecform('srgb2lab');
             I_lab= applycform(I, cform);

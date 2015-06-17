@@ -29,12 +29,12 @@ for  iter = 1: paramALL.IterMax;
     
     
     %% Feature Extraction & Modeling
-%     [ paramALL, paramMethod ] = getGaLF( paramALL );
-    [ paramALL, paramMethod ] = getHist( paramALL );
+    [ paramALL, paramMethod ] = getGaLF( paramALL );
+%     [ paramALL, paramMethod ] = getHist( paramALL );
     
     %% Person Re-identification CrossValidation
-%     [cmc(iter,:), nAUC(iter)]=testGaLF(paramALL, paramMethod, iter);
-    [cmc(iter,:), nAUC(iter)]=testHist(paramALL, paramMethod, iter);
+    [cmc(iter,:), nAUC(iter)]=testGaLF(paramALL, paramMethod, iter);
+%     [cmc(iter,:), nAUC(iter)]=testHist(paramALL, paramMethod, iter);
     
     
 end

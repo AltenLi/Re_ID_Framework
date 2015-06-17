@@ -14,9 +14,9 @@ paramALL.MAXCLUSTER  = 1; % maximum number of images per signatures (=1 SvsS, >1
 paramALL.IterMax = 10;% iterate num
 paramALL.CanSkipFeature = 1;%skip exist model creating
 paramALL.CanSkipModel = 1;%skip exist model creating
-paramALL.ReSelectLabel = 1;%re-select the test label
+paramALL.ReSelectLabel = 0;%re-select the test label
 paramALL.CleanLastFMR = 1;%re-select the test label
-paramALL.Dataset=upper('ETHZ1'); % 'VIPeR' 'iLIDS' 'ETHZ3' 'WARD'
+paramALL.Dataset=upper('VIPeR'); % 'VIPeR' 'iLIDS' 'ETHZ3' 'WARD'
 
 paramALL.DIR.FeatureDIR='Features\';%Feature File Dir
 paramALL.DIR.LabelDIR=['Labels\' paramALL.Dataset '\'];

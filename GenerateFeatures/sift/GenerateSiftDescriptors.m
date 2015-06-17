@@ -64,16 +64,16 @@ for f = 1:length(imageFileList)
     outFName = fullfile(dataBaseDir, sprintf('%s_sift.mat', baseFName));
     imageFName = fullfile(imageBaseDir, imageFName);
     
-    if(mod(f,100)==0 && exist('pfig','var'))
-        sp_progress_bar(pfig,1,4,f,length(imageFileList));
-    end
+%     if(mod(f,100)==0 && exist('pfig','var'))
+%         sp_progress_bar(pfig,1,4,f,length(imageFileList));
+%     end
     if(exist(outFName,'file')~=0 && canSkip)
         %fprintf('Skipping %s\n', imageFName);
         continue;
     end
     
     features = sp_gen_sift(imageFName,params);
-    sp_progress_bar(pfig,1,4,f,length(imageFileList),'Generating Sift Descriptors:');
+%     sp_progress_bar(pfig,1,4,f,length(imageFileList),'Generating Sift Descriptors:');
     
     sp_make_dir(outFName);
     save(outFName, 'features');
